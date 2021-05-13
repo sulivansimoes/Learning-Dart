@@ -1,0 +1,10 @@
+# Arquivo de configuração do dart.
+# para baixar/atualizar as dependencias use: dart pub get
+# Vide: https://pub.dev/packages/dartdoc
+
+name: meu_projeto
+version: 1.0.0
+environment:
+  sdk: '>=2.10.0 <3.0.0'
+dependencies:
+  dartdoc: ^0.42.0
