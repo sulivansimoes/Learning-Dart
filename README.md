@@ -1,4 +1,4 @@
-[English]
+# [English]
 Learning dart
 * variables
 * functions
@@ -8,7 +8,7 @@ Learning dart
 * Inheritance
 * Factory
 
-[Português]
+# [Português]
 Aprendendo Dart
 * variáveis
 * funções
