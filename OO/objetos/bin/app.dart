@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:objetos/src/Animal/Animal.dart';
 import 'package:objetos/src/Animal/FactoryAnimal.dart';
 import 'package:objetos/src/Animal/Especie.dart';
@@ -27,6 +29,7 @@ void programa_pessoa() {
   var mulher2 = Mulher(nome: 'Sakura', idade: 26);
   var homem1 = Homem(nome: 'Yamamoto', idade: 34);
   var homem2 = Homem(nome: 'Yoshiaki', idade: 34);
+  var homem3 = Homem();
 
   pessoas.add(pessoa);
   pessoas.add(mulher1);
@@ -34,9 +37,24 @@ void programa_pessoa() {
   pessoas.add(mulher2);
   pessoas.add(homem2);
 
+  print('População japonesa atual');
   pessoas.forEach((individuo) {
     individuo.toString();
   });
+
+  // Trabalhando com os métodos internos
+
+  print('\n ## Cadastre-se ##');
+  print(' -- Informe seu nome -- ');
+  homem3.nome = stdin.readLineSync();
+  print(' -- Informe sua idade -- ');
+  homem3.idade = int.parse(stdin.readLineSync());
+  print(' -- Informe seu peso -- ');
+  homem3.peso = double.parse(stdin.readLineSync());
+  print(' -- Informe sua altura -- ');
+  homem3.altura = double.parse(stdin.readLineSync());
+  print('--------- CADASTRO REALIZADO ---------');
+  homem3.toString();
 }
 
 void programa_animal() {
