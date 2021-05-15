@@ -20,13 +20,9 @@ class Pessoa {
     _id = DateTime.now().millisecondsSinceEpoch;
   }
 
-  double calculaImc() {
-    return peso / (altura * altura);
-  }
+  double calculaImc() => peso / (altura * altura);
 
-  bool isMaiorIdade() {
-    return idade >= _maiorIdade;
-  }
+  bool isMaiorIdade() => idade >= _maiorIdade;
 
   @override
   String toString() {
