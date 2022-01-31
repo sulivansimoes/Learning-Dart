@@ -3,7 +3,7 @@ class Animal {
   String som;
   String tipo;
 
-  Animal({this.som, this.tipo, this.nome});
+  Animal({ required this.som, required this.tipo, required this.nome});
 
   void emitirSom() {
     print('O $nome é um $tipo, e faz: $som');

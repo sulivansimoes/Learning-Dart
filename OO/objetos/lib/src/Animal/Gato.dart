@@ -1,5 +1,5 @@
-import 'package:objetos/src/Animal/Animal.dart';
+import 'Animal.dart';
 
 class Gato extends Animal {
-  Gato({String nome}) : super(som: 'miau', tipo: 'gato', nome: nome);
+  Gato({nome}) : super(som: 'miau', tipo: 'gato', nome: nome);
 }

@@ -4,7 +4,7 @@ const clearTerminal = '\x1B[2J\x1B[0;0H'; //Limpa terminal [equivalente ao cls];
 
 List<Map<String, dynamic>> pessoas = [];
 void cadastraPessoa() {
-  String text;
+  dynamic text;
 
   print(clearTerminal);
   do {

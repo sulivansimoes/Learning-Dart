@@ -9,7 +9,7 @@ const _clearTerminal = '\x1B[2J\x1B[0;0H'; //Limpa terminal [equivalente ao cls]
 List<String> produtos = <String>[];
 
 void carrinhoDeCompras() {
-  String text;
+  dynamic text;
 
   do {
     print('*** Adicione um produto. Para sair digite: "sair" ***');
@@ -44,10 +44,12 @@ void _imprimeItensDoCarrinho() {
 ///
 void _removeItemDoCarrinho() {
   int item;
+  dynamic input;
 
   print('*** Qual item deseja remover? ***');
   _imprimeItensDoCarrinho();
-  item = int.parse(stdin.readLineSync());
+  input = stdin.readLineSync();
+  item = int.parse( input ?? 0 );
   produtos.removeAt(item);
   print('Item removido!!');
 }

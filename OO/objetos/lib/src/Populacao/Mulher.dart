@@ -1,9 +1,5 @@
 import 'Pessoa.dart';
 
 class Mulher extends Pessoa {
-  Mulher({String nome, int idade}) {
-    super.nome = nome;
-    super.idade = idade;
-    super.sexo = 'Feminino';
-  }
+  Mulher({required String nome, required int idade}) :super(nome: nome, idade: idade, sexo:'Feminino');
 }

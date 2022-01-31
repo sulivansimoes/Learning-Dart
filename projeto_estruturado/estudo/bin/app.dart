@@ -1,6 +1,7 @@
-import 'package:estudo/src/algoritmo_2_IMC_Refatorado.dart';
-import 'package:estudo/src/carrinho_compras_refatorado.dart';
-import 'package:estudo/src/maps3.dart';
+
+import '../lib/src/algoritmo_2_IMC_Refatorado.dart';
+import '../lib/src/carrinho_compras_refatorado.dart';
+import '../lib/src/maps3.dart';
 
 void main(List<String> arguments) {
   if (arguments[0] == 'calculo-imc') {

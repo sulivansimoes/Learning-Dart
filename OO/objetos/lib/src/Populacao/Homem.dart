@@ -1,9 +1,6 @@
 import 'Pessoa.dart';
 
 class Homem extends Pessoa {
-  Homem({String nome, int idade}) {
-    super.nome = nome;
-    super.idade = idade;
-    super.sexo = 'Masculino';
-  }
+
+  Homem({ required String nome, required int idade}) :super(nome:nome, idade:idade, sexo: 'Masculino' );
 }

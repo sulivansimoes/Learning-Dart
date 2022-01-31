@@ -1,7 +1,7 @@
 class Pessoa {
   static const int _maiorIdade = 18;
 
-  int _id;
+  late int _id;
 
   int idade;
   String nome;
@@ -12,8 +12,8 @@ class Pessoa {
   //Construtures com  parametros nomeados.
   //Esse tipo de parametro faz a passagem de valor ser opcional
   Pessoa(
-      {this.nome,
-      this.idade,
+      {required this.nome,
+       required this.idade,
       this.sexo = 'Não especificado',
       this.altura = 0,
       this.peso = 0}) {
